@@ -1,0 +1,57 @@
+.aboutUs {
+  height: 80vh;
+}
+.aboutUs::before {
+  content: " ";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 80%;
+  position: absolute;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-header {
+  margin-top: 3rem;
+}
+.about-first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-first img {
+  width: 49%;
+  height: 450px;
+  object-fit: cover;
+  padding-right: 2rem;
+}
+
+.about-first h1 {
+  font-size: 3rem;
+}
+.about-first p {
+  text-align: center;
+  justify-content: center;
+  padding: 3rem 4rem;
+  line-height: 3.2rem;
+}
+@media screen and (max-width: 850px) {
+  .aboutUs {
+    margin: 4rem 2 rem;
+  }
+  .about-first {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+  }
+  .about-first p {
+    width: 100%;
+  }
+  .about-first img {
+    height: 250px;
+  }
+}
